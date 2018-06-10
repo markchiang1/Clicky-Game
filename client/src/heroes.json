@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Aatrox",
+        "clicked":"false",
+        "image": "/images/Aatrox.png",
+        "bio":""
+    },{
+        "name": "Amumu",
+        "clicked":"false",
+        "image": "/images/Amumu.png",  
+        "bio":""
+    },{
+        "name": "Fizz",
+        "clicked":"false",
+        "image": "/images/Fizz.png",
+        "bio":""
+    },{
+        "name": "Katarina",
+        "clicked":"false",
+        "image": "/images/Katarina.png",
+        "bio":""
+    },{
+        "name": "Khazix",
+        "clicked":"false",
+        "image": "/images/Khazix.png",
+        "bio":""
+    },{
+        "name": "Miss Fortune",
+        "clicked":"false",
+        "image": "/images/MissFortune.png",
+        "bio":""
+    },{
+        "name": "Morgana",
+        "clicked":"false",
+        "image": "/images/Morgana.png",
+        "bio":""
+    },{
+        "name": "Nasus",
+        "clicked":"false",
+        "image": "/images/Nasus.png",
+        "bio":""
+    },{
+        "name": "Rengar",
+        "clicked":"false",
+        "image": "/images/Rengar.png",
+        "bio":""
+    },{
+        "name": "Teemo",
+        "clicked":"false",
+        "image": "/images/Teemo.png",
+        "bio":""
+    },{
+        "name": "Vi",
+        "clicked":"false",
+        "image": "/images/Vi.png",
+        "bio":""
+    },{
+        "name": "Zyra",
+        "clicked":"false",
+        "image": "/images/Zyra.png",
+        "bio":""
+    }
+]
