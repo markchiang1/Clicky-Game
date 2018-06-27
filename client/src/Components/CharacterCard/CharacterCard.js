@@ -12,14 +12,14 @@ class CharacterCard extends Component {
   // }
 
   checkState = () => {
-    var isClicked = this.state.clicked
-    console.log(isClicked)
-    if(isClicked){
+    // console.log(this)
+    if(this.state.clicked){
+      // console.log(this.state);
      alert('You already clicked that!')
     }
     else{
       this.setState({clicked:true})
-      console.log(this.state.clicked)
+      // console.log(this.state.clicked)
     }
   }
 
@@ -28,7 +28,7 @@ class CharacterCard extends Component {
     return (
       <span className="card">
         <span className="card-img" style={{width: "18rem"}} onClick = {this.checkState}>
-          <img alt={this.props.name} src={this.props.image} onClick={this.props.onClick}/>
+          <img alt={this.props.name} src={this.props.image} onClick={() => this.props.onClick(this.state.clicked)}/>
         </span>
       </span>
     )

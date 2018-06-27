@@ -9,10 +9,12 @@ class App extends Component {
 
   state = {
     heroes,
+    currentScore: 0,
+    highScore: 0
   }
 
-  shuffleCards = () => {
-    console.log('cards are shuffling!!!')
+  shuffleCards = isClicked => {
+    // console.log('cards are shuffling!!!')
     
     var i, j, x
     // if(this.checkState()===false){
@@ -22,10 +24,26 @@ class App extends Component {
           heroes[i] = heroes[j]
           heroes[j] = x
         }
-      console.log(heroes)
+      // console.log(heroes)
       this.setState({heroes: heroes})
     // }
+    this.handleScore(isClicked);
+    // console.log(isClicked);
+    
+  }
 
+  handleScore = hotdog =>{
+    console.log(hotdog)
+    if(hotdog==false){
+      if (this.state.highScore === this.state.currentScore){
+        this.setState({currentScore:this.state.currentScore+=1, highScore: this.state.highScore+=1})
+      }
+      else {
+        this.setState({currentScore: this.state.currentScore+=1})
+      }
+      console.log("High Score: ", this.state.highScore)
+      console.log("Current Score: ", this.state.currentScore)
+    }
   }
 
   render() {
