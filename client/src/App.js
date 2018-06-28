@@ -24,26 +24,25 @@ class App extends Component {
       heroes[i] = heroes[j]
       heroes[j] = x
     }
-    // console.log(heroes)
     this.setState({ heroes: heroes })
-    // }
-    this.handleScore(isClicked);
-    // console.log(isClicked);
+    this.handleScore(isClicked)
   }
 
-  handleScore = hotdog => {
-    console.log(hotdog)
-    if (hotdog === false) {
-      if (this.state.highScore === this.state.currentScore) {
-        let score = this.state.currentScore
-        let highScore = this.state.highScore
-        this.setState({ currentScore: score++, highScore: highScore++ })
+  handleScore = isClicked => {
+    let score;
+    if (isClicked=== false) {
+      if (this.state.highScore <= this.state.currentScore) {
+        score = this.state.currentScore + 1
+        let highScore = this.state.highScore + 1
+        this.setState({ currentScore: score, highScore: highScore })
       }
       else {
-        this.setState({ currentScore: this.state.currentScore += 1 })
+        score = this.state.currentScore + 1;
+        this.setState({ currentScore: score})
       }
-      console.log("High Score: ", this.state.highScore)
-      console.log("Current Score: ", this.state.currentScore)
+    }
+    else {
+      this.setState({currentScore:0})
     }
   }
 

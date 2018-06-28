@@ -5,7 +5,10 @@ class ScoreCard extends Component {
     render() {
         return (
             <Fragment>
-                {console.log("Score Card Component")}
+                {/* {console.log("Score Card Component")} */}
+                <div>
+                    High Score: {this.props.highScore}
+                </div>
                 <div>
                     Current Score: {this.props.currentScore}
                 </div>
@@ -13,3 +16,5 @@ class ScoreCard extends Component {
         )
     }
 }
+
+export default ScoreCard
