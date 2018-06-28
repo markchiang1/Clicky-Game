@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import './CharacterCard.css'
-// import characters from '../../scripts/characterSeed.js' 
+import React, {Component} from "react"
+import "./CharacterCard.css"
+// import characters from "../../scripts/characterSeed.js" 
 
 class CharacterCard extends Component {
   state = {
@@ -15,7 +15,7 @@ class CharacterCard extends Component {
     // console.log(this)
     if(this.state.clicked){
       // console.log(this.state);
-     alert('You already clicked that!')
+     alert("You already clicked that!")
     }
     else{
       this.setState({clicked:true})
