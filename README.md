@@ -4,32 +4,26 @@
 
 Clicky-Game is a memory game that uses 9 shuffling League of Lenged's Character Cards. 
 
-### **Gameplay**
+### ** *Gameplay* **
 
-##### **Start**
-Click the image of any character to start the game. 
+##### ** *Start* **
+* Click the image of any character to start the game. 
 
-##### **Objective**
-Do not click the same image you previously clicked.
+##### ** *Objective* **
+* Do not click the same image you previously clicked.
 
-##### **Scoring**
-Each successful click done on a character not previously clicked will increment your score by one. 
-If you clicked the character before, the game will be over.
+##### ** *Scoring* **
+* Each successful click done on a character not previously clicked will increment your score by one. 
+* If you clicked the character before, the game will be over.
 
 ### **Tech Used**
 
 * React
 
-### **Project Demonstration*
-
-
-
-**Tech Used:**
+### **Project Demonstration**
 
 
 ### Screenshots
-
-
 
 ![Full Site](./Assets/img/landing.png "Home Page")
 
