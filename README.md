@@ -35,8 +35,8 @@ If you clicked the character before, the game will be over.
 
 ---------------------
 
-![Login Page](./Assets/img/login.png "Login/Sign Up")
+![Gameplay](./Assets/img/login.png "Login/Sign Up")
 
 ---------------------
 
-![Results Page](./Assets/img/results.png "Login/Sign Up")
+![Scoring](./Assets/img/results.png "Login/Sign Up")
