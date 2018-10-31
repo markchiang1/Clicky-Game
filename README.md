@@ -1,84 +1,38 @@
-# Create React Express App
+# Clicky-Game
 
-## About This Boilerplate
+### **Overview**
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+Clicky-Game is a memory game that uses 12 shuffling League of Lenged's Character Cards. 
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+### **Gameplay**
 
-## Starting the app locally
+##### **Start**
+* Click the image of any character to start the game. 
 
-Start by installing front and backend dependencies. While in this directory, run the following commands:
+##### **Objective**
+* Do not click the same image previously clicked.
 
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
+##### **Scoring**
+* Each successful click done on a character not previously clicked will increment the current score by one. 
+* If the character was clicked before the game will be over and the score will be reset to zero.
+* The high score is recorded for that web-browser session.
+* The highest score possible is 12.
 
-After both installations complete, run the following command in your terminal:
+### **Tech Used**
 
-```
-yarn start
-```
+* React
 
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+### **Project Demonstration**
 
-## Deployment (Heroku)
 
-### Create a Git Repo
+### Screenshots ###
 
-Once you're ready to deploy, start by making sure your project is a git repository. If so, proceed to the next section, otherwise run the following commands in your terminal:
+![Full Site](./Assets/img/landing.png "Home Page")
 
-```
-git init
-git add .
-git commit -m "Initial commit"
-```
+---------------------
 
-### Heroku
+![Gameplay](./Assets/img/login.png "Login/Sign Up")
 
-Make sure that you have a Heroku app created for this project. If so, proceed to the next section, otherwise run the following command in your terminal:
+---------------------
 
-```
-heroku create
-```
-
-Optionally add an argument for your application's name after `create`, e.g.
-
-```
-heroku myAwesomeApp
-```
-
-### Deploying
-
-#### Option 1
-
-Use the deploy script inside of the outer `package.json`
-
-After confirming that you have an up to date git repository and a Heroku app created, run the following command to deploy:
-
-```
-yarn deploy
-```
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
-
-#### Option 2
-
-Manually deploy 
-
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
-
-1. Build the React app for production by running the following command:
-
-```
-yarn build
-```
-
-2. Add and commit all changes to git
-
-3. Push to Heroku
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+![Scoring](./Assets/img/results.png "Login/Sign Up")
