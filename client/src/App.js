@@ -30,7 +30,7 @@ class App extends Component {
 
   handleScore = isClicked => {
     let score;
-    if (isClicked=== false) {
+    if (isClicked === false) {
       if (this.state.highScore <= this.state.currentScore) {
         score = this.state.currentScore + 1
         let highScore = this.state.highScore + 1
@@ -38,11 +38,11 @@ class App extends Component {
       }
       else {
         score = this.state.currentScore + 1;
-        this.setState({ currentScore: score})
+        this.setState({ currentScore: score })
       }
     }
     else {
-      this.setState({currentScore:0})
+      this.setState({ currentScore: 0 })
     }
   }
 

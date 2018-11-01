@@ -27,7 +27,7 @@ class CharacterCard extends Component {
   render(){
     return (
       <span className="card">
-        <span className="card-img" style={{width: "18rem"}} onClick = {this.checkState}>
+        <span className="card-img" style={{width: "auto"}} onClick = {this.checkState}>
           <img alt={this.props.name} src={this.props.image} onClick={() => this.props.onClick(this.state.clicked)}/>
         </span>
       </span>
