@@ -25,7 +25,7 @@ Clicky-Game is a memory game that uses 12 shuffling League of Lenged's Character
 ### **Project Demonstration**
 
 
-### Screenshots ###
+### Screenshot ###
 
 ![Full Site](./screenshot.png)
 
